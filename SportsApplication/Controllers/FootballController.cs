@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SportsApplication.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SportsApplication.Controllers
 {
@@ -16,6 +17,7 @@ namespace SportsApplication.Controllers
         {
             using (var socer = new SportsContextClass())
             {
+                //var data = socer.Crickets.Where(x => x.Player_Name == "vishnu").ToList();
                 foreach (var foot in soccer)
                 {
                     socer.Footballs.Add(new Football() 
