@@ -27,9 +27,9 @@ namespace SportsApplication
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
-        //    modelBuilder.Entity<Football>().HasKey<int>(f => f.FootballKey).HasRequried(f => f.Tropies);
+        //    //modelBuilder.Entity<Football>().HasKey<int>(f => f.FootballKey).HasRequried(f => f.Tropies);
 
-        //    modelBuilder.Entity<FootballClub>.Property(p => p.Club_Name).HasMaxLength(15).HasForeignKey<int>(p => p.Player_Id);
+        //    //modelBuilder.Entity<FootballClub>.Property(p => p.Club_Name).HasMaxLength(15).HasForeignKey<int>(p => p.Player_Id);
 
         //}
         public DbSet<Cricket> Crickets { get; set; }
@@ -37,6 +37,8 @@ namespace SportsApplication
         public DbSet<Bigbash> Bigbashs { get; set; }
         public DbSet<Football> Footballs { get; set; }
         public DbSet<FootballClub> FootballClubs { get; set; }
+
+        public DbSet<Vehicle> Vehicles { get; set; }
 
 
     }
